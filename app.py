@@ -3,7 +3,7 @@ import pickle
 from sklearn.feature_extraction import DictVectorizer
 
 # إعداد الصفحة
-st.set_page_config(page_title="توقع مغادرة العميل", page_icon="📉", layout="centered")
+st.set_page_config(page_title="وَبَر", layout="centered")
 
 # تنسيق واجهة داكنة متطورة
 st.markdown("""
@@ -58,7 +58,7 @@ if 'page' not in st.session_state:
 
 # التنقل بالزر
 if st.session_state.page == 'welcome':
-    st.title("🔍✨ توقع مغادرة العميل")
+    st.title("وَبَر")
     st.markdown("""
     <div style='text-align:center;'>
         <p style='font-size:22px;'>📞 في شركات الاتصالات، من الطبيعي إن بعض العملاء يفكرون يغيرون مزود الخدمة</p>
