@@ -74,7 +74,7 @@ if st.session_state.page == 'welcome':
 elif st.session_state.page == 'predict':
     st.title("🧠 أدخل بيانات العميل")
     st.markdown("""
-<p style='text-align:center; font-size:22px; background-color:#121829; padding:10px 20px; border-radius:12px; display:inline-block;'>🧠 هنا تقدر تختار بيانات العميل اللي يتعامل مع جهتك، وتشوف هل ممكن يغادر الخدمة أو لا... خلنا نشوف 🤔🤔</p>
+<p style='text-align:center; font-size:22px; background-color:#121829; padding:10px 20px; border-radius:12px; display:inline-block;'>🧠 هنا تقدر تختار بيانات العميل اللي يتعامل مع جهتك، وتشوف هل ممكن يغادر الخدمة أو لا... خلنا نشوف</p>
 """, unsafe_allow_html=True)
 
     with st.form("churn_form"):
