@@ -67,14 +67,15 @@ if st.session_state.page == 'welcome':
     </div>
     """, unsafe_allow_html=True)
     st.markdown("---")
-    if st.button("🚀 جرب النموذج الآن"):
+    if st.button("جرب النموذج الآن"):
         st.session_state.page = 'predict'
         st.rerun()
 
 elif st.session_state.page == 'predict':
-    st.title("🧠 أدخل بيانات العميل")
+    st.title("أدخل بيانات العميل")
     st.markdown("""
-<p style='text-align:center; font-size:22px; background-color:#121829; padding:10px 20px; border-radius:12px; display:inline-block;'>🧠 هنا تقدر تختار بيانات العميل اللي يتعامل مع جهتك، وتشوف هل ممكن يغادر الخدمة أو لا... خلنا نشوف</p>
+<p style='text-align:center; font-size:22px; background-color:#121829; padding:10px 20px; border-radius:12px; display:inline-block;'>هذا القسم مخصص لإدخال بيانات العميل، ليقوم النموذج بتحليلها وتقديم نسبة احتمالية مغادرته للخدمة
+</p>
 """, unsafe_allow_html=True)
 
     with st.form("churn_form"):
